@@ -10,6 +10,11 @@
 				<p style="text-align: center; font-size: smaller;">Filtered job builds by parameter name {{header.fpn}} with value {{header.fpv}}</p>
 			{% endif %}
 		</div>
+		{% if preamble is not none %}
+			<div>
+				{{ preamble }}
+			</div>
+		{% endif %}
 		<div>
 			<table>
 				<tr>
